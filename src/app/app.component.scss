@@ -1,0 +1,295 @@
+.container {
+  margin: 1% 10%;
+  .cart-block {
+    margin: 1%;
+  }
+  @media screen and (max-width: 768px) {
+    margin: 0;
+  }
+}
+
+.mat-toolbar {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(220, 14%, 75%);
+  justify-content: space-between;
+  width: 100%;
+  .nav-button:hover {
+    border-bottom: 3px solid hsl(26, 100%, 55%);
+  }
+  .cart-image {
+    margin-bottom: 25px;
+  }
+  .logo {
+    @media screen and (max-width: 768px) {
+      margin-top: 10px;
+    }
+  }
+}
+
+.mat-toolbar-mobile {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .button-block {
+    background-color: hsl(0, 0%, 100%);
+    height: 100%;
+    width: 75%;
+    margin-top: 40px;
+    position: absolute;
+    button {
+      color: hsl(220, 13%, 13%);
+      display: block;
+      font-weight: 700;
+    }
+  }
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  &:hover {
+    border: 3px solid hsl(26, 100%, 55%);
+    cursor: pointer;
+  }
+}
+
+button {
+  font-family: "Kumbh Sans";
+  font-weight: 400;
+}
+
+.product-image {
+  border-radius: 15px;
+  display: block;
+  margin: 10px;
+  margin-bottom: 20px;
+  width: 380px;
+  height: 380px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.product-image-mobile {
+  width: 100%;
+}
+
+.product-thumbnail-image {
+  border-radius: 15px;
+  margin: 10px;
+  margin-bottom: 20px;
+  width: 80px;
+  height: 80px;
+  &:hover {
+    cursor: pointer;
+    opacity: 50%;
+  }
+}
+
+.content {
+  width: 85%;
+
+  h1 {
+    color: hsl(220, 13%, 13%);
+    font-size: 40px;
+  }
+
+  h2 {
+    color: hsl(220, 13%, 13%);
+    span {
+      background-color: hsl(25, 100%, 94%);
+      color: hsl(26, 100%, 55%);
+      border-radius: 10px;
+      padding: 5px;
+      margin-left: 10px;
+      font-size: 20px;
+    }
+  }
+
+  h3 {
+    color: hsl(220, 14%, 75%);
+    text-decoration: line-through;
+  }
+
+  h4 {
+    color: hsl(26, 100%, 55%);
+  }
+
+  p {
+    color: hsl(219, 9%, 45%);
+  }
+
+  .select {
+    background-color: hsl(223, 64%, 98%);
+    border-radius: 10px;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px;
+    button {
+      font-family: "Kumbh Sans";
+      font-weight: 700;
+      &:hover {
+        opacity: 50%;
+      }
+    }
+    span {
+      font-weight: 700;
+    }
+    @media screen and (max-width: 768px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 0;
+      width: 100%;
+    }
+  }
+
+  .add-button {
+    background-color: hsl(26, 100%, 55%);
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    font-family: "Kumbh Sans";
+    font-weight: 700;
+    padding: 10px 5%;
+    .cart-image {
+      margin-right: 15px;
+    }
+    &:hover {
+      opacity: 50%;
+    }
+    @media screen and (max-width: 768px) {
+      margin: 10px;
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    margin: 0 auto;
+  }
+}
+
+.stepper-button-previous, .stepper-button-next {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 50%;
+  position: absolute;
+  height: 55px;
+}
+
+.stepper-button-previous {
+  top: 35%;
+  left: 25px;
+}
+
+.stepper-button-next {
+  top: 35%;
+  right: 25px;
+}
+
+.selected-image {
+  opacity: 50%;
+  border: 3px solid hsl(26, 100%, 55%);
+}
+
+.cart-content {
+  background-color: hsl(0, 0%, 100%);
+  position: absolute;
+  border-radius: 15px;
+  box-shadow: 10px 10px 8px #888888;
+  top: 80px;
+  right: 100px;
+  padding: 10px;
+  width: 350px;
+  height: 225px;
+  font-weight: 400;
+  z-index: 1;
+  h3 {
+    color: hsl(220, 13%, 13%);
+  }
+  p {
+    text-align: center;
+    margin-top: 15%;
+  }
+  .info {
+    position: relative;
+    bottom: 60px;
+  }
+  .price {
+    position: relative;
+    bottom: 60px;
+    left: 80px;
+    span {
+      color: hsl(220, 13%, 13%);
+      font-weight: 700;
+    }
+  }
+  .product-image {
+    border-radius: 5px;
+    margin: 10px;
+    margin-bottom: 20px;
+    width: 60px;
+    height: 60px;
+    display: inline;
+  }
+  .remove-button {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    bottom: 90px;
+    right: -120px;
+  }
+  .checkout-button {
+    background-color: hsl(26, 100%, 55%);
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    font-family: "Kumbh Sans";
+    font-weight: 700;
+    padding: 10px 5%;
+    margin: 0 10px;
+    width: 100%;
+    position: relative;
+    right: 250px;
+    &:hover {
+      opacity: 50%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    left: 10px;
+  }
+}
+
+::ng-deep .mat-badge-content {
+  background: hsl(26, 100%, 55%);
+}
+
+#lightbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  .close-button {
+    margin: 2% 58%;
+    position: absolute;
+  }
+  .lightbox-image {
+    border-radius: 15px;
+    width: 380px;
+    height: 380px;
+    margin: 5% 37%;
+  }
+  .thumbnail-block {
+    margin: -2% 36%;
+  }
+}
+
+::ng-deep .mat-button .mat-button-focus-overlay {
+  background-color: transparent;
+}
